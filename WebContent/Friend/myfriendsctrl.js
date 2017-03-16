@@ -1,5 +1,5 @@
 app.controller('myfriendctrl',['$scope','$http',function($scope,$http){
-	var BASE_URL = 'http://localhost:8081/ChatUZBackEnd/';
+	var BASE_URL = 'http://localhost:8081/ChatUZBackend';
 	
 	$scope.getmyfriends=function(){
 		$http({

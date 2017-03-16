@@ -86,7 +86,7 @@ function run($rootScope, $location, $cookieStore, $http) {
     $rootScope.globals = $cookieStore.get('globals') || {};
     $rootScope.currentUser = $cookieStore.get('currentUser') || {};
     if ($rootScope.currentUser) {
-    	console.log("cuurent user="+$rootScope.currentUser)
+    	console.log("curent user="+$rootScope.currentUser)
         $http.defaults.headers.common['Authorization'] = 'Basic ' + $rootScope.currentUser // jshint ignore:line
     }
 
