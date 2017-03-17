@@ -1,4 +1,3 @@
-	
 console.log("app")
 app.controller("chatController",function($scope,ChatService){
 	console.log("chatctrl")

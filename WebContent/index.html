@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-img {
-	max-width: 400%;
-	height: auto;
-}
-</style>
+
 <meta charset="ISO-8859-1">
-<title>Home</title>
+<title>Collusion.Com</title>
+<meta charset="UTF-8">
+	
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -51,20 +49,34 @@ img {
 <script type="text/javascript" src="resources/Login.js"></script>
 
 </head>
+<style>
+
+.navbar{
+background-color:	#663399;
+margin-bottom: 0;
+border-radius: 0;
+max-width:;
+max-height:;
+
+}
+body {
+    background-image:url("");
+    background-color:		#E0FFFF ;
+    
+    
+}
+
+</style>
 
 <body data-ng-app="myApp" data-ng-controller="UserController as vm">
 <nav class="navbar navbar-inverse"> 
   
-  <!-- <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">
-        <img alt="Brand" src="resources/imgs/Creersite.png">
-      </a>
-    </div>
-  </div> -->
-  
-  <div class="container-fluid">
-    <div class="navbar-header"> <a class="navbar-brand" href="#home"><b> </b>Home</a> </div>
+   <h1>
+  <center><font color="white">Collusion.Com</font></center>
+		</h1>
+      
+    <div class="container-fluid">
+    <div class="navbar-header"> <a class="navbar-brand" href="#home"><b> </b><font color="white">Home</font></a> </div>
     
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse"	id="bs-example-navbar-collapse-1">
@@ -72,14 +84,14 @@ img {
         <!-- <li><a href="#blog">Blog</a></li> 
 				 <li><a href="#viewblog">View Blogs</a></li> -->
         
-        <li class="dropdown"><a class="dropdown-toggle"	data-toggle="dropdown" href="#viewblog">Blogs <span class="caret"></span></a>
+        <li class="dropdown"><a class="dropdown-toggle"	data-toggle="dropdown" href="#viewblog"><font color="white">Blogs</font> <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#blog">CreateBlog</a></li>
             <li><a href="#viewblog">ViewBlog</a></li>
           </ul>
         </li>
 <!---------------------------------Jobs-->
-        <li class="dropdown"> <a class="dropdown-toggle"	data-toggle="dropdown" href="#jobs">Jobs <span class="caret"></span></a>
+        <li class="dropdown"> <a class="dropdown-toggle"	data-toggle="dropdown" href="#jobs"><font color="white">Jobs</font> <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li data-ng-show="currentUser.role=='Admin'"><a href="#jobs">CreateJob</a></li>
             <li data-ng-show="currentUser.role=='Student'"><a href="#applyjob">ApplyJobs</a></li>
@@ -91,7 +103,7 @@ img {
         
         <!---------------------------------Forums-->
         <li class="dropdown"><a class="dropdown-toggle"
-						data-toggle="dropdown" href="#forum">Forums <span class="caret"></span></a>
+						data-toggle="dropdown" href="#forum"><font color="white">Forums</font> <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#forum">CreateForum</a></li>
             <li><a href="#viewforum">ViewForum</a></li>
@@ -100,10 +112,10 @@ img {
         
 			<!--        Friends-->
         <li data-ng-hide="currentUser.role=='Admin'">    
-        	<a href="#users">Find Friends</a>
+        	<a href="#users"><font color="white">Find Friends</font></a>
         </li>
         <li data-ng-hide="currentUser.role=='Admin'">
-        	<a href="#chat">Chat</a>
+        	<a href="#chat"><font color="white">Chat</font></a>
          </li>
       </ul>
    
@@ -111,21 +123,23 @@ img {
 
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#register"
-						data-ng-hide="globals.currentUser.islogged"><i
-							class="glyphicon glyphicon-user"></i></a></li>
+						data-ng-hide="globals.currentUser.islogged">
+						<font color="white"><i
+							class="glyphicon glyphicon-user"></i></font></a></li>
         <li><a href="#login"
-						data-ng-hide="globals.currentUser.islogged"><i
-							class="glyphicon glyphicon-log-in"></i></a></li>
+						data-ng-hide="globals.currentUser.islogged"><font color="white"><i
+							class="glyphicon glyphicon-log-in"></i></font></a></li>
         <li style="padding-top:20px;"  data-ng-show="globals.currentUser.islogged">
           <p	style="color: white";>Welcome:{{globals.currentUser.username}}</p>
         </li>
         <li data-ng-show="globals.currentUser.islogged"><a
-						href="#myprofile">My Profile</a></li>
-        <li><a href="" data-ng-show="globals.currentUser.islogged"
+						href="#myprofile"><font color="white">My Profile</font></a></li>
+         <li><a href="" data-ng-show="globals.currentUser.islogged"
 						data-ng-click="vm.logout()"><i
-							class="glyphicon glyphicon-log-out"></i>logout</a></li>
+							class="glyphicon glyphicon-log-out"></i><font color="white">logout</font></a></li>
       </ul>
-      <!-- {{currentUser.id}} --> 
+    
+ <!-- {{currentUser.id}} --> 
       
     </div>
   </div>
@@ -145,4 +159,9 @@ $('ul.nav li.dropdown').hover(function()
 		}
 		);
 </script>
+                
+
+                        
+                        
+
 </html>

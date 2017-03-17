@@ -4,13 +4,49 @@
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
 </head>
+
 <body data-ng-app="myApp">
-<form action="" data-ng-controller="jobctrl" data-ng-submit="submit()" ><hr>
-title:<input type="text" data-ng-model="title"><hr>
-company:<input type="text" data-ng-model="company"><hr>
-jobdetails:<input type="text" data-ng-model="jobdetails"><hr>
- date:<input type="date" data-ng-model="lastdate"><hr>
- <input type="submit">
+	<div class="container">
+<form class="form-horizontal" role="form" data-ng-submit="submit()" action="" data-ng-controller="userctrl"><br>
+                <h1><center><font color="darkpink">Job Page</font></center></h1><br><br>
+                <div class="form-group">
+                    <label for="userName" class="col-sm-3 control-label">Title:</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="title" placeholder="title" required="" data-ng-model="title" class="form-control" autofocus >
+                    </div>
+                </div>
+<div class="form-group">
+                    <label for="userName" class="col-sm-3 control-label">Company:</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="company" placeholder="company" required="" data-ng-model="company" class="form-control" autofocus >
+                    </div>
+                </div>
+
+<div class="form-group">
+                    <label for="userName" class="col-sm-3 control-label">Job Details:</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="Job Details" placeholder="Job Details" required="" data-ng-model="Job Details" class="form-control" autofocus >
+                    </div>
+                </div>
+<div class="form-group">
+                    <label for="birthDate" class="col-sm-3 control-label">Date:</label>
+                    <div class="col-sm-9">
+                        <input type="date" id="date" required="" data-ng-model="dob" class="form-control">
+                    </div>
+                    <br><br>
+
+<center><button ><input type="Submit"class="btn btn-primary btn-block"></button></center>`
+
+
+
+
+
+
+
+
+
+
+
 </form>
 </body>
 </html>

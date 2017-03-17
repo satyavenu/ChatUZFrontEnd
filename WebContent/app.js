@@ -97,9 +97,9 @@ function run($rootScope, $location, $cookieStore, $http) {
         var role=$rootScope.currentUser.role;
         var loggedIn = $rootScope.globals.currentUser;
         if (restrictedPage && !loggedIn) {
-            $location.path('/login');
+            $location.path('/home');
         }else if(adminPage && !loggedIn){
-        	$location.path('/login');
+        	$location.path('/home');
         }
     });
 }
